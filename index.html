@@ -15,105 +15,60 @@
 <body style="font-family: roboto, 
             sans-serif;
             text-overflow: ellipsis;
-            background: #ffffff;
-            
-            
-            
-
+            background: #ffffff;       
 ">
 
-    <html>
-
-    <div class="div-general" style="
-        display: flex; 
-        gap: 1px; 
-        width: 390px; 
-        align-items: flex-start; 
-        justify-content: center;
-        max-width: 390px;
-        background: #ffffff;
-        
-        ">
-
-
-        <div class="div-imagen">
-            <img src="https://raw.githubusercontent.com/MauroNimbutech/firma-deepblue/main/Logo.png"
-                alt="Logo Deep Blue / Ship Agents / Off Shore" width="190px" onmouseover="this.style.opacity='0.65';"
-                onmouseout="this.style.opacity='1';">
-
-        </div>
-
-        <div style="
-
-        color: #123B62;
-        font-size: 0.7rem;
-        line-height: 0.2;
-        font-weight: 475;
-        padding: 10px;
-        
-
-
-        ">
-
-            <p style="font-size: 0.92rem; font-weight: bold;">Nombre de la persona</p>
-            <p style=" font-size: 0.75rem;">Rol de la persona</p>
-            <img src="linea.png" alt="linea divisora" style="max-width: 10.5rem; margin: 5px 0 10px;">
-            <div id="celular" style="display: flex;">
-                <img src="https://raw.githubusercontent.com/MauroNimbutech/firma-deepblue/03619fefc10b93867247318e074b40616714d7ba/smartphone.svg"
-                    alt="icono de smartphone" width="13px" style="margin-right: 2px;">
-                <p>+57 3203757755</p>
-            </div>
-            <div id="Correo-electrónico" style="display: flex; align-items: baseline; gap: 3px">
-                <img src="https://raw.githubusercontent.com/MauroNimbutech/firma-deepblue/03619fefc10b93867247318e074b40616714d7ba/mail.svg"
-                    alt="icono de smartphone" width="13px">
-                <a style="text-decoration: none; color: #123B62"
-                    href="mailto:email@example.com">gestionhumana@dbshipagency.com</a>
-            </div>
-            <div id="telefono"
-                style="display: flex; align-items: baseline; gap: 3px; margin-top: 3px; margin-bottom: -2px;">
-                <img src="https://raw.githubusercontent.com/MauroNimbutech/firma-deepblue/03619fefc10b93867247318e074b40616714d7ba/telephone.svg"
-                    alt="icono de email" width="12px">
-                <p>+601 3902222</p>
-            </div>
-            <div id="linkedin" style="display: flex; align-items: baseline; gap: 4px">
-                <a href="https://co.linkedin.com/in/deep-blue-ship-agency-sas-547390181"><img
-                        src="https://raw.githubusercontent.com/MauroNimbutech/firma-deepblue/03619fefc10b93867247318e074b40616714d7ba/linkedin.svg"
-                        alt="icono de linkedin" width="12px"></a>
-                <a style="text-decoration: none; color: #123B62"
-                    href="https://co.linkedin.com/in/deep-blue-ship-agency-sas-547390181">Deep Blue Ship Agency's
-                    Profile</a>
-            </div>
-            <div id="ubicacion" style="display: flex; align-items: baseline; gap: 4px; line-height: 1.2;">
-                <img src="https://raw.githubusercontent.com/MauroNimbutech/firma-deepblue/03619fefc10b93867247318e074b40616714d7ba/ubicacion.svg"
-                    alt="icono de ubicacion" width="12px">
-                <div>
-                    <p>Edificio torre Escalar<br>
-                        Cra 9N° 80-45 Of. 501<br>
-                        Bogotá, Colombia</p>
+    <table style="width: 100%; max-width: 390px; background: #ffffff;">
+        <tr>
+            <td style="width: 50%; text-align: center; vertical-align: top;">
+                <img src="https://raw.githubusercontent.com/MauroNimbutech/firma-deepblue/main/Logo.png"
+                    alt="Logo Deep Blue / Ship Agents / Off Shore" width="190px" onmouseover="this.style.opacity='0.65';"
+                    onmouseout="this.style.opacity='1';">
+            </td>
+            <td style="width: 50%; vertical-align: top; padding: 10px; color: #123B62; font-size: 0.7rem; line-height: 0.2; font-weight: 475;">
+                <p style="font-size: 0.92rem; font-weight: bold;">%%displayname%%</p>
+                <p style="font-size: 0.75rem;">%%title%%</p>
+                <img src="https://raw.githubusercontent.com/MauroNimbutech/firma-deepblue/main/linea.png" alt="linea divisora" style="max-width: 10.5rem; margin: 5px 0 10px;">
+                <div id="celular" style="display: flex; align-items: center;">
+                    <img src="https://raw.githubusercontent.com/MauroNimbutech/firma-deepblue/03619fefc10b93867247318e074b40616714d7ba/smartphone.svg"
+                        alt="icono de smartphone" width="13px" style="margin-right: 2px;">
+                    <p>+57 3203757755</p>
                 </div>
-            </div>
+                <div id="Correo-electrónico" style="display: flex; align-items: baseline; gap: 3px">
+                    <img src="https://raw.githubusercontent.com/MauroNimbutech/firma-deepblue/03619fefc10b93867247318e074b40616714d7ba/mail.svg"
+                        alt="icono de smartphone" width="13px">
+                    <a style="text-decoration: none; color: #123B62;" href="mailto:%%Email%%" target="_blank">%%Email%%</a>
+                </div>
+                <div id="telefono" style="display: flex; align-items: baseline; gap: 3px; margin-top: 3px; margin-bottom: -12px;">
+                    <img src="https://raw.githubusercontent.com/MauroNimbutech/firma-deepblue/03619fefc10b93867247318e074b40616714d7ba/telephone.svg"
+                        alt="icono de email" width="12px">
+                    <p>(+57) %%MobileNumber%%</p>
+                </div>
 
-
-
-
-
-        </div>
-    </div>
+                <div id="ubicacion" style="display: flex; align-items: baseline; gap: 4px; line-height: 1.2;">
+                    <img src="https://raw.githubusercontent.com/MauroNimbutech/firma-deepblue/03619fefc10b93867247318e074b40616714d7ba/ubicacion.svg"
+                        alt="icono de ubicacion" width="12px">
+                    <div>
+                        <p>Edificio torre Escalar<br>
+                            Cra 9N° 80-45 Of. 501<br>
+                            Bogotá, Colombia</p>
+                    </div>
+                </div>
+                <div id="linkedin" style="display: flex; align-items: baseline; gap: 4px; padding: 0 3px;">
+                    <a href="https://www.linkedin.com/in/deep-blue-ship-agency-547390181/" target="_blank"><img
+                            src="/LinkedIn-ball.svg" alt="icono de linkedin" width="18px"> </a>
+                </div>
+            </td>
+        </tr>
+    </table>
 
     <div style="margin: 0 7px;">
-
         <img src="https://raw.githubusercontent.com/MauroNimbutech/firma-deepblue/main/cultura-amarte.png"
-            alt="Cultura amarte" width="375px" onmouseover="this.style.opacity='0.65';" ;
-            onmouseout="this.style.opacity='1.0';" ;>
+            alt="Cultura amarte" width="375px" onmouseover="this.style.opacity='0.65';" 
+            onmouseout="this.style.opacity='1.0';">
     </div>
 
-    <div style="color: #6c6c6c; 
-    font-size: 8px; 
-    margin:7px; 
-    width: 390px;
-    background: #ffffff;
-    
-    ">
+    <div style="color: #6c6c6c; font-size: 8px; margin: 7px; width: 390px; background: #ffffff;">
         <p>
             "This email and its attachment is intended only for the use of the individual(s) or the entity(es) addressed
             above, and may contain
