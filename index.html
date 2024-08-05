@@ -10,53 +10,76 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+
 </head>
 
-<body style="font-family: roboto, 
-            sans-serif;
-            text-overflow: ellipsis;
-            background: #ffffff;       
-">
+<!--
+<style>
+    @media (prefers-color-scheme: dark) {
+        .icon {
+            filter: invert(32%) sepia(100%) saturate(876%) hue-rotate(181deg) brightness(92%) contrast(86%);
+        }
+    }
+</style>
+-->
 
-    <table style="width: 100%; max-width: 390px; background: #ffffff;">
+<body style="font-family: roboto, sans-serif;
+             position: relative;   
+            ">
+
+
+    <table style="width: 100%; max-width: 390px;">
+
         <tr>
             <td style="width: 50%; text-align: center; vertical-align: top;">
-                <img src="https://raw.githubusercontent.com/MauroNimbutech/firma-deepblue/main/Logo.png"
-                    alt="Logo Deep Blue / Ship Agents / Off Shore" width="190px" onmouseover="this.style.opacity='0.65';"
-                    onmouseout="this.style.opacity='1';">
+                <img class="icon" src="Logo.png" alt="Logo Deep Blue / Ship Agents / Off Shore" width="190px">
             </td>
-            <td style="width: 50%; vertical-align: top; padding: 10px; color: #123B62; font-size: 0.7rem; line-height: 0.2; font-weight: 475;">
-                <p style="font-size: 0.92rem; font-weight: bold;">%%displayname%%</p>
-                <p style="font-size: 0.75rem;">%%title%%</p>
-                <img src="https://raw.githubusercontent.com/MauroNimbutech/firma-deepblue/main/linea.png" alt="linea divisora" style="max-width: 10.5rem; margin: 5px 0 10px;">
-                <div id="celular" style="display: flex; align-items: center;">
+
+            <td
+                style="width: 50%; vertical-align: top; padding: 10px; color: #123B62 !important; font-size: 0.7rem; font-weight: 475;">
+                <div id="nombres">
+                    <p style="font-size: 0.92rem; font-weight: bold;">%%displayname%%</p>
+                    <p style="font-size: 0.75rem;">%%title%%</p>
+                </div>
+                <img src="https://raw.githubusercontent.com/MauroNimbutech/firma-deepblue/main/linea.png"
+                    alt="linea divisora" style="max-width: 10.5rem; margin: 5px 0 10px 0; width: 90%;">
+                <div id="celular" style="display: block;">
                     <img src="https://raw.githubusercontent.com/MauroNimbutech/firma-deepblue/03619fefc10b93867247318e074b40616714d7ba/smartphone.svg"
-                        alt="icono de smartphone" width="13px" style="margin-right: 2px;">
-                    <p>+57 3203757755</p>
+                        alt="icono de smartphone" width="13px" style="display: inline; padding: 0 1px;" class="icon">
+                    <p style="display: inline">+57 %%MobileNumber%%</p>
                 </div>
-                <div id="Correo-electrónico" style="display: flex; align-items: baseline; gap: 3px">
+                <div id="Correo-electrónico" style="display: block;">
                     <img src="https://raw.githubusercontent.com/MauroNimbutech/firma-deepblue/03619fefc10b93867247318e074b40616714d7ba/mail.svg"
-                        alt="icono de smartphone" width="13px">
-                    <a style="text-decoration: none; color: #123B62;" href="mailto:%%Email%%" target="_blank">%%Email%%</a>
+                        alt="icono de smartphone" width="13px" style="display: inline;" class="icon">
+                    <a style="text-decoration: none; color: #123B62; display: inline;" href="mailto:%%Email%%"
+                        target="_blank">%%Email%%</a>
                 </div>
-                <div id="telefono" style="display: flex; align-items: baseline; gap: 3px; margin-top: 3px; margin-bottom: -12px;">
+                <div id="telefono">
                     <img src="https://raw.githubusercontent.com/MauroNimbutech/firma-deepblue/03619fefc10b93867247318e074b40616714d7ba/telephone.svg"
-                        alt="icono de email" width="12px">
-                    <p>(+57) %%MobileNumber%%</p>
+                        alt="icono de email" width="12px" style="display: inline; padding: 0 1px" class="icon">
+                    <p style="display: inline">(601) 3902222</p>
                 </div>
 
-                <div id="ubicacion" style="display: flex; align-items: baseline; gap: 4px; line-height: 1.2;">
-                    <img src="https://raw.githubusercontent.com/MauroNimbutech/firma-deepblue/03619fefc10b93867247318e074b40616714d7ba/ubicacion.svg"
-                        alt="icono de ubicacion" width="12px">
-                    <div>
-                        <p>Edificio torre Escalar<br>
-                            Cra 9N° 80-45 Of. 501<br>
-                            Bogotá, Colombia</p>
-                    </div>
+                <div id="ubicacion" style="overflow: hidden;">
+                    <table>
+                        <tr>
+                            <td style="width: 12px; vertical-align: top;">
+                                <img src="https://raw.githubusercontent.com/MauroNimbutech/firma-deepblue/03619fefc10b93867247318e074b40616714d7ba/ubicacion.svg"
+                                    alt="icono de ubicacion" width="12px" class="icon">
+                            </td>
+                            <td style="vertical-align: top;">
+                                <p style="display: inline;">Edificio torre Escalar<br>
+                                    Cra 9N° 80-45 Of. 501<br>
+                                    Bogotá, Colombia</p>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
-                <div id="linkedin" style="display: flex; align-items: baseline; gap: 4px; padding: 0 3px;">
+
+                <div id="linkedin" style="padding-top: 6px;">
                     <a href="https://www.linkedin.com/in/deep-blue-ship-agency-547390181/" target="_blank"><img
-                            src="https://raw.githubusercontent.com/MauroNimbutech/firma-deepblue/4ca55fbfa92d04f782d38aa5b612440b3d4cebe1/LinkedIn-ball.svg" alt="icono de linkedin" width="18px"> </a>
+                            src="https://raw.githubusercontent.com/MauroNimbutech/firma-deepblue/4ca55fbfa92d04f782d38aa5b612440b3d4cebe1/LinkedIn-ball.svg"
+                            alt="icono de linkedin" width="18px"> </a>
                 </div>
             </td>
         </tr>
@@ -64,7 +87,7 @@
 
     <div style="margin: 0 7px;">
         <img src="https://raw.githubusercontent.com/MauroNimbutech/firma-deepblue/main/cultura-amarte.png"
-            alt="Cultura amarte" width="375px" onmouseover="this.style.opacity='0.65';" 
+            alt="Cultura amarte" width="375px" onmouseover="this.style.opacity='0.65';"
             onmouseout="this.style.opacity='1.0';">
     </div>
 
